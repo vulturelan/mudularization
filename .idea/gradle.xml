@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/basiclib" />
             <option value="$PROJECT_DIR$/build-gradle" />
             <option value="$PROJECT_DIR$/module1" />
+            <option value="$PROJECT_DIR$/module2" />
             <option value="$PROJECT_DIR$/router" />
             <option value="$PROJECT_DIR$/switchmodule" />
           </set>

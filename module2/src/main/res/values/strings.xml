@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Module2</string>
+
+    <string name="hello_module2_fragment">Hello module2 fragment</string>
+</resources>
