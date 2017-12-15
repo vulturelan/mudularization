@@ -1,0 +1,2 @@
+include ':app', ':module1', ':switchmodule', ':router', ':basiclib'
+include ':build-gradle'

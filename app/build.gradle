@@ -1,0 +1,34 @@
+apply plugin: 'com.dd.comgradle'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.mobimtech.componenttest"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':router')
+}
+
+combuild {
+    applicationName = 'com.mobimtech.componenttest.App'
+    isRegisterCompoAuto = true
+}

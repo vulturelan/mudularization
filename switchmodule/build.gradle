@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+/**
+ * group version 作为 maven 库的坐标的一部分
+ * group 作为坐标的 groupId, module 名作为坐标的 artifactId
+ */
+group='com.mobimtech.plugin'
+version='0.0.1'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo1'))
+        }
+    }
+}
