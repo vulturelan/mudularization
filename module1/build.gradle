@@ -32,7 +32,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':router')
+    api project(':router')
+    annotationProcessor rootProject.ext.arouterCompiler
 }
 
 combuild {

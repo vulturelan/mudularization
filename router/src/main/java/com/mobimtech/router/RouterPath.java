@@ -6,4 +6,5 @@ package com.mobimtech.router;
 
 public class RouterPath {
     public static final String MAIN2ACTIVITY = "/app/Main2Activity";
+    public static final String MODULE1ACTIVITY = "/module1/Module1Activity";
 }

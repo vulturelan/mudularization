@@ -136,8 +136,10 @@ public class ComBuild implements Plugin<Project> {
         String components;
         if (assembleTask.isDebug) {
             components = (String) project.properties.get("debugComponent")
+            System.out.println("assembleTask is debug")
         } else {
             components = (String) project.properties.get("compileComponent")
+            System.out.println("assembleTask is not debug")
         }
 
         if (components == null || components.length() == 0) {

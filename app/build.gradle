@@ -25,7 +25,9 @@ android {
 }
 
 dependencies {
-    implementation project(':router')
+    api project(':router')
+
+    annotationProcessor rootProject.ext.arouterCompiler
 }
 
 combuild {
