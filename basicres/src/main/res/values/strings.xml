@@ -1,0 +1,11 @@
+<resources>
+
+    <!--label-->
+    <string name="label_app">component_test</string>
+    <string name="label_module1">label_module1</string>
+    <string name="label_module2">label_module2</string>
+
+    <string name="hello_module1_fragment">Hello module1 fragment</string>
+    <string name="hello_module2_fragment">Hello module2 fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

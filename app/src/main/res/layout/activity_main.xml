@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,17 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Hello App!"
+        android:textColor="@color/basic_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="to main2"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/module"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button"
         android:text="to module1"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/module_fragment"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/module"
         android:text="to module fragment"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/module_share"
@@ -47,13 +47,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/module_fragment"
         android:text="get module string"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
     <FrameLayout
-        android:layout_below="@id/module_fragment"
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/module_share">
 
     </FrameLayout>
 
